@@ -1031,4 +1031,7 @@ a:visited {
         .auth-modal-form {
                 width: 100%;
         }
+        body.modalActive #header{
+                display: none;
+        }
 }

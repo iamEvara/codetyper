@@ -10,10 +10,10 @@ class AuthScreen extends Screen {
         }
 
         enter() {
+                document.body.classList.add("modalActive");
 
                 this.screenContainer = document.getElementById("screenContainer");
                 this.screenContainer.innerHTML += AUTH_HTML;
-
                 this.modal = document.getElementById("authModal");
                 this.closeModalButton = document.getElementById("authModalCancel");
 
@@ -265,6 +265,7 @@ class AuthScreen extends Screen {
         }
 
         leave() {
+                document.body.classList.remove("modalActive");
                 this.modal.remove();
                 return;
         }
